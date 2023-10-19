@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <link rel="stylesheet" href="./assets/style1.css" />
+  <link rel="stylesheet" href="./assets/style2.css" />
+</head>
+<body>
+    <div class="loginPage">
+        <div name="myForm" class="form">
+          <div id="login">
+            <form class="login-form" name="myForm">
+              <h2>Login Page</h2>
+              <input name="username" type="text" placeholder="enter username" />
+              <input name="password" type="password" placeholder="enter password" />
+              <button type="button" onclick="validateLogin()">login</button>
+              <p class="message">Don't have an account? <a href="#register" id="register_profile">Register</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="registerPage">
+        <div class="form">
+          <div id="register">
+            <form class="register-form" name="otherForm">
+              <h2>Registration Page</h2>
+              <input id="username" type="text" placeholder="choose username" />
+              <input id="password" type="password" placeholder="choose password" />
+              <input id="confirmation" type="password" placeholder="re-enter password" />
+              <input id="fname" type="text" placeholder="enter first name" />
+              <input id="lname" type="text" placeholder="enter last name" />
+              <input id="email" type="text" placeholder="enter email address" />
+              
+              <div class="g-recaptcha" data-sitekey=""></div>
+              <button onclick="createUser()" id = "createuser" type="button">create</button>
+              <p class="message">Already have an account? <a href="#login" id="login_profile">Login</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script src="./assets/script1.js"></script>
+</body>
+
+</html>
